@@ -1,0 +1,5 @@
+platform :ios, '7.0'
+target “FQConnectDemo" do
+pod "AFNetworking","~> 3.0"             #HTTP请求
+pod "CocoaAsyncSocket", "~> 7.5.1"      #Socket请求
+end

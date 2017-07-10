@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65E64631422BAEACF95E0F7C /* libPods-FQConnectDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0553D9B8264F0FD21AFEC9 /* libPods-FQConnectDemo.a */; };
+		CB0C5B8C1F0E514A004609F1 /* FQTestConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C5B8B1F0E514A004609F1 /* FQTestConnect.m */; };
+		CB6042A51EF92E2000DC5B7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6042A41EF92E2000DC5B7C /* main.m */; };
+		CB6042A81EF92E2000DC5B7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6042A71EF92E2000DC5B7C /* AppDelegate.m */; };
+		CB6042AE1EF92E2000DC5B7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6042AC1EF92E2000DC5B7C /* Main.storyboard */; };
+		CB6042B01EF92E2000DC5B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6042AF1EF92E2000DC5B7C /* Assets.xcassets */; };
+		CB6042B31EF92E2000DC5B7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6042B11EF92E2000DC5B7C /* LaunchScreen.storyboard */; };
+		CB6042BE1EF92E2000DC5B7C /* FQConnectDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6042BD1EF92E2000DC5B7C /* FQConnectDemoTests.m */; };
+		CB6042C91EF92E2000DC5B7C /* FQConnectDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6042C81EF92E2000DC5B7C /* FQConnectDemoUITests.m */; };
+		CB6043111EF9358B00DC5B7C /* FQBaseConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6043101EF9358B00DC5B7C /* FQBaseConnect.m */; };
+		CB6043151EFA3F4A00DC5B7C /* FQSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6043141EFA3F4A00DC5B7C /* FQSocket.m */; };
+		CB6043181EFA4C2000DC5B7C /* FQConnectSocketTcpMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6043171EFA4C2000DC5B7C /* FQConnectSocketTcpMessage.m */; };
+		CB60431B1EFA4C4300DC5B7C /* FQConnectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB60431A1EFA4C4300DC5B7C /* FQConnectRequest.m */; };
+		CB60431E1EFA4C5F00DC5B7C /* FQConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = CB60431D1EFA4C5F00DC5B7C /* FQConnect.m */; };
+		CB6043211EFA673700DC5B7C /* FQConnectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6043201EFA673700DC5B7C /* FQConnectTest.m */; };
+		CB6043241EFA675500DC5B7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6043231EFA675500DC5B7C /* ViewController.m */; };
+		CBE2069A1EFCECF600C83042 /* FQSocketDataBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE206991EFCECF600C83042 /* FQSocketDataBuffer.m */; };
+		CBE2069D1EFCEE2400C83042 /* FQConnectKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE2069C1EFCEE2400C83042 /* FQConnectKeeper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB6042BA1EF92E2000DC5B7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB6042981EF92E2000DC5B7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB60429F1EF92E2000DC5B7C;
+			remoteInfo = FQConnectDemo;
+		};
+		CB6042C51EF92E2000DC5B7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB6042981EF92E2000DC5B7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB60429F1EF92E2000DC5B7C;
+			remoteInfo = FQConnectDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BEACEAD75E34D55C9819E10 /* Pods-FQConnectDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FQConnectDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FQConnectDemo/Pods-FQConnectDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5E0553D9B8264F0FD21AFEC9 /* libPods-FQConnectDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FQConnectDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAA338D91A16B474BE4C3C3F /* Pods-FQConnectDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FQConnectDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FQConnectDemo/Pods-FQConnectDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CB0C5B8A1F0E514A004609F1 /* FQTestConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQTestConnect.h; sourceTree = "<group>"; };
+		CB0C5B8B1F0E514A004609F1 /* FQTestConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQTestConnect.m; sourceTree = "<group>"; };
+		CB6042A01EF92E2000DC5B7C /* FQConnectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FQConnectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6042A41EF92E2000DC5B7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB6042A61EF92E2000DC5B7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB6042A71EF92E2000DC5B7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB6042AD1EF92E2000DC5B7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB6042AF1EF92E2000DC5B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB6042B21EF92E2000DC5B7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB6042B41EF92E2000DC5B7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB6042B91EF92E2000DC5B7C /* FQConnectDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FQConnectDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6042BD1EF92E2000DC5B7C /* FQConnectDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQConnectDemoTests.m; sourceTree = "<group>"; };
+		CB6042BF1EF92E2000DC5B7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB6042C41EF92E2000DC5B7C /* FQConnectDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FQConnectDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6042C81EF92E2000DC5B7C /* FQConnectDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQConnectDemoUITests.m; sourceTree = "<group>"; };
+		CB6042CA1EF92E2000DC5B7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB60430F1EF9358B00DC5B7C /* FQBaseConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQBaseConnect.h; sourceTree = "<group>"; };
+		CB6043101EF9358B00DC5B7C /* FQBaseConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQBaseConnect.m; sourceTree = "<group>"; };
+		CB6043121EF9362500DC5B7C /* FQNetDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQNetDefines.h; sourceTree = "<group>"; };
+		CB6043131EFA3F4A00DC5B7C /* FQSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQSocket.h; sourceTree = "<group>"; };
+		CB6043141EFA3F4A00DC5B7C /* FQSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQSocket.m; sourceTree = "<group>"; };
+		CB6043161EFA4C2000DC5B7C /* FQConnectSocketTcpMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQConnectSocketTcpMessage.h; sourceTree = "<group>"; };
+		CB6043171EFA4C2000DC5B7C /* FQConnectSocketTcpMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQConnectSocketTcpMessage.m; sourceTree = "<group>"; };
+		CB6043191EFA4C4300DC5B7C /* FQConnectRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQConnectRequest.h; sourceTree = "<group>"; };
+		CB60431A1EFA4C4300DC5B7C /* FQConnectRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQConnectRequest.m; sourceTree = "<group>"; };
+		CB60431C1EFA4C5F00DC5B7C /* FQConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQConnect.h; sourceTree = "<group>"; };
+		CB60431D1EFA4C5F00DC5B7C /* FQConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQConnect.m; sourceTree = "<group>"; };
+		CB60431F1EFA673700DC5B7C /* FQConnectTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQConnectTest.h; sourceTree = "<group>"; };
+		CB6043201EFA673700DC5B7C /* FQConnectTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQConnectTest.m; sourceTree = "<group>"; };
+		CB6043221EFA675500DC5B7C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CB6043231EFA675500DC5B7C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CBE206981EFCECF600C83042 /* FQSocketDataBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQSocketDataBuffer.h; sourceTree = "<group>"; };
+		CBE206991EFCECF600C83042 /* FQSocketDataBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQSocketDataBuffer.m; sourceTree = "<group>"; };
+		CBE2069B1EFCEE2400C83042 /* FQConnectKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQConnectKeeper.h; sourceTree = "<group>"; };
+		CBE2069C1EFCEE2400C83042 /* FQConnectKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQConnectKeeper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB60429D1EF92E2000DC5B7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E64631422BAEACF95E0F7C /* libPods-FQConnectDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6042B61EF92E2000DC5B7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6042C11EF92E2000DC5B7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36E6171C752E2FA032795B02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0553D9B8264F0FD21AFEC9 /* libPods-FQConnectDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		621E24589C6B2C89E94A9AA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAA338D91A16B474BE4C3C3F /* Pods-FQConnectDemo.debug.xcconfig */,
+				2BEACEAD75E34D55C9819E10 /* Pods-FQConnectDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB6042971EF92E2000DC5B7C = {
+			isa = PBXGroup;
+			children = (
+				CB6042A21EF92E2000DC5B7C /* FQConnectDemo */,
+				CB6042BC1EF92E2000DC5B7C /* FQConnectDemoTests */,
+				CB6042C71EF92E2000DC5B7C /* FQConnectDemoUITests */,
+				CB6042A11EF92E2000DC5B7C /* Products */,
+				621E24589C6B2C89E94A9AA6 /* Pods */,
+				36E6171C752E2FA032795B02 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB6042A11EF92E2000DC5B7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB6042A01EF92E2000DC5B7C /* FQConnectDemo.app */,
+				CB6042B91EF92E2000DC5B7C /* FQConnectDemoTests.xctest */,
+				CB6042C41EF92E2000DC5B7C /* FQConnectDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB6042A21EF92E2000DC5B7C /* FQConnectDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CB6042A61EF92E2000DC5B7C /* AppDelegate.h */,
+				CB6042A71EF92E2000DC5B7C /* AppDelegate.m */,
+				CB6043221EFA675500DC5B7C /* ViewController.h */,
+				CB6043231EFA675500DC5B7C /* ViewController.m */,
+				CB60431F1EFA673700DC5B7C /* FQConnectTest.h */,
+				CB6043201EFA673700DC5B7C /* FQConnectTest.m */,
+				CB0C5B8A1F0E514A004609F1 /* FQTestConnect.h */,
+				CB0C5B8B1F0E514A004609F1 /* FQTestConnect.m */,
+				CB6042D61EF92E5700DC5B7C /* Connect */,
+				CB6042A31EF92E2000DC5B7C /* Supporting Files */,
+			);
+			path = FQConnectDemo;
+			sourceTree = "<group>";
+		};
+		CB6042A31EF92E2000DC5B7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB6042AC1EF92E2000DC5B7C /* Main.storyboard */,
+				CB6042AF1EF92E2000DC5B7C /* Assets.xcassets */,
+				CB6042B11EF92E2000DC5B7C /* LaunchScreen.storyboard */,
+				CB6042B41EF92E2000DC5B7C /* Info.plist */,
+				CB6042A41EF92E2000DC5B7C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB6042BC1EF92E2000DC5B7C /* FQConnectDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB6042BD1EF92E2000DC5B7C /* FQConnectDemoTests.m */,
+				CB6042BF1EF92E2000DC5B7C /* Info.plist */,
+			);
+			path = FQConnectDemoTests;
+			sourceTree = "<group>";
+		};
+		CB6042C71EF92E2000DC5B7C /* FQConnectDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB6042C81EF92E2000DC5B7C /* FQConnectDemoUITests.m */,
+				CB6042CA1EF92E2000DC5B7C /* Info.plist */,
+			);
+			path = FQConnectDemoUITests;
+			sourceTree = "<group>";
+		};
+		CB6042D61EF92E5700DC5B7C /* Connect */ = {
+			isa = PBXGroup;
+			children = (
+				CB6043121EF9362500DC5B7C /* FQNetDefines.h */,
+				CB6043161EFA4C2000DC5B7C /* FQConnectSocketTcpMessage.h */,
+				CB6043171EFA4C2000DC5B7C /* FQConnectSocketTcpMessage.m */,
+				CB6043191EFA4C4300DC5B7C /* FQConnectRequest.h */,
+				CB60431A1EFA4C4300DC5B7C /* FQConnectRequest.m */,
+				CB60430F1EF9358B00DC5B7C /* FQBaseConnect.h */,
+				CB6043101EF9358B00DC5B7C /* FQBaseConnect.m */,
+				CB60431C1EFA4C5F00DC5B7C /* FQConnect.h */,
+				CB60431D1EFA4C5F00DC5B7C /* FQConnect.m */,
+				CBE2069B1EFCEE2400C83042 /* FQConnectKeeper.h */,
+				CBE2069C1EFCEE2400C83042 /* FQConnectKeeper.m */,
+				CB6042EC1EF92E5700DC5B7C /* Socket */,
+			);
+			path = Connect;
+			sourceTree = "<group>";
+		};
+		CB6042EC1EF92E5700DC5B7C /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				CB6043131EFA3F4A00DC5B7C /* FQSocket.h */,
+				CB6043141EFA3F4A00DC5B7C /* FQSocket.m */,
+				CBE206981EFCECF600C83042 /* FQSocketDataBuffer.h */,
+				CBE206991EFCECF600C83042 /* FQSocketDataBuffer.m */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB60429F1EF92E2000DC5B7C /* FQConnectDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB6042CD1EF92E2000DC5B7C /* Build configuration list for PBXNativeTarget "FQConnectDemo" */;
+			buildPhases = (
+				F8AC8D463DD9630A43327FC1 /* [CP] Check Pods Manifest.lock */,
+				CB60429C1EF92E2000DC5B7C /* Sources */,
+				CB60429D1EF92E2000DC5B7C /* Frameworks */,
+				CB60429E1EF92E2000DC5B7C /* Resources */,
+				43A31BA2FA721DF27AE5CAC3 /* [CP] Embed Pods Frameworks */,
+				61560CCF7919A5887B7809CC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FQConnectDemo;
+			productName = FQConnectDemo;
+			productReference = CB6042A01EF92E2000DC5B7C /* FQConnectDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB6042B81EF92E2000DC5B7C /* FQConnectDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB6042D01EF92E2000DC5B7C /* Build configuration list for PBXNativeTarget "FQConnectDemoTests" */;
+			buildPhases = (
+				CB6042B51EF92E2000DC5B7C /* Sources */,
+				CB6042B61EF92E2000DC5B7C /* Frameworks */,
+				CB6042B71EF92E2000DC5B7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB6042BB1EF92E2000DC5B7C /* PBXTargetDependency */,
+			);
+			name = FQConnectDemoTests;
+			productName = FQConnectDemoTests;
+			productReference = CB6042B91EF92E2000DC5B7C /* FQConnectDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB6042C31EF92E2000DC5B7C /* FQConnectDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB6042D31EF92E2000DC5B7C /* Build configuration list for PBXNativeTarget "FQConnectDemoUITests" */;
+			buildPhases = (
+				CB6042C01EF92E2000DC5B7C /* Sources */,
+				CB6042C11EF92E2000DC5B7C /* Frameworks */,
+				CB6042C21EF92E2000DC5B7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB6042C61EF92E2000DC5B7C /* PBXTargetDependency */,
+			);
+			name = FQConnectDemoUITests;
+			productName = FQConnectDemoUITests;
+			productReference = CB6042C41EF92E2000DC5B7C /* FQConnectDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB6042981EF92E2000DC5B7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "冯倩";
+				TargetAttributes = {
+					CB60429F1EF92E2000DC5B7C = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					CB6042B81EF92E2000DC5B7C = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB60429F1EF92E2000DC5B7C;
+					};
+					CB6042C31EF92E2000DC5B7C = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB60429F1EF92E2000DC5B7C;
+					};
+				};
+			};
+			buildConfigurationList = CB60429B1EF92E2000DC5B7C /* Build configuration list for PBXProject "FQConnectDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB6042971EF92E2000DC5B7C;
+			productRefGroup = CB6042A11EF92E2000DC5B7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB60429F1EF92E2000DC5B7C /* FQConnectDemo */,
+				CB6042B81EF92E2000DC5B7C /* FQConnectDemoTests */,
+				CB6042C31EF92E2000DC5B7C /* FQConnectDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB60429E1EF92E2000DC5B7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6042B31EF92E2000DC5B7C /* LaunchScreen.storyboard in Resources */,
+				CB6042B01EF92E2000DC5B7C /* Assets.xcassets in Resources */,
+				CB6042AE1EF92E2000DC5B7C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6042B71EF92E2000DC5B7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6042C21EF92E2000DC5B7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43A31BA2FA721DF27AE5CAC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FQConnectDemo/Pods-FQConnectDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61560CCF7919A5887B7809CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FQConnectDemo/Pods-FQConnectDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8AC8D463DD9630A43327FC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB60429C1EF92E2000DC5B7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6043241EFA675500DC5B7C /* ViewController.m in Sources */,
+				CB60431B1EFA4C4300DC5B7C /* FQConnectRequest.m in Sources */,
+				CB6043181EFA4C2000DC5B7C /* FQConnectSocketTcpMessage.m in Sources */,
+				CB0C5B8C1F0E514A004609F1 /* FQTestConnect.m in Sources */,
+				CB6043151EFA3F4A00DC5B7C /* FQSocket.m in Sources */,
+				CB6043211EFA673700DC5B7C /* FQConnectTest.m in Sources */,
+				CB6042A81EF92E2000DC5B7C /* AppDelegate.m in Sources */,
+				CB6043111EF9358B00DC5B7C /* FQBaseConnect.m in Sources */,
+				CBE2069A1EFCECF600C83042 /* FQSocketDataBuffer.m in Sources */,
+				CB6042A51EF92E2000DC5B7C /* main.m in Sources */,
+				CBE2069D1EFCEE2400C83042 /* FQConnectKeeper.m in Sources */,
+				CB60431E1EFA4C5F00DC5B7C /* FQConnect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6042B51EF92E2000DC5B7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6042BE1EF92E2000DC5B7C /* FQConnectDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6042C01EF92E2000DC5B7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6042C91EF92E2000DC5B7C /* FQConnectDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB6042BB1EF92E2000DC5B7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB60429F1EF92E2000DC5B7C /* FQConnectDemo */;
+			targetProxy = CB6042BA1EF92E2000DC5B7C /* PBXContainerItemProxy */;
+		};
+		CB6042C61EF92E2000DC5B7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB60429F1EF92E2000DC5B7C /* FQConnectDemo */;
+			targetProxy = CB6042C51EF92E2000DC5B7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB6042AC1EF92E2000DC5B7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB6042AD1EF92E2000DC5B7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB6042B11EF92E2000DC5B7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB6042B21EF92E2000DC5B7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB6042CB1EF92E2000DC5B7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB6042CC1EF92E2000DC5B7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB6042CE1EF92E2000DC5B7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAA338D91A16B474BE4C3C3F /* Pods-FQConnectDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FQConnectDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-11.FQConnectDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB6042CF1EF92E2000DC5B7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BEACEAD75E34D55C9819E10 /* Pods-FQConnectDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FQConnectDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-11.FQConnectDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CB6042D11EF92E2000DC5B7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FQConnectDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-11.FQConnectDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FQConnectDemo.app/FQConnectDemo";
+			};
+			name = Debug;
+		};
+		CB6042D21EF92E2000DC5B7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FQConnectDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-11.FQConnectDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FQConnectDemo.app/FQConnectDemo";
+			};
+			name = Release;
+		};
+		CB6042D41EF92E2000DC5B7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FQConnectDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-11.FQConnectDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FQConnectDemo;
+			};
+			name = Debug;
+		};
+		CB6042D51EF92E2000DC5B7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FQConnectDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-11.FQConnectDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FQConnectDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB60429B1EF92E2000DC5B7C /* Build configuration list for PBXProject "FQConnectDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6042CB1EF92E2000DC5B7C /* Debug */,
+				CB6042CC1EF92E2000DC5B7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB6042CD1EF92E2000DC5B7C /* Build configuration list for PBXNativeTarget "FQConnectDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6042CE1EF92E2000DC5B7C /* Debug */,
+				CB6042CF1EF92E2000DC5B7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB6042D01EF92E2000DC5B7C /* Build configuration list for PBXNativeTarget "FQConnectDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6042D11EF92E2000DC5B7C /* Debug */,
+				CB6042D21EF92E2000DC5B7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB6042D31EF92E2000DC5B7C /* Build configuration list for PBXNativeTarget "FQConnectDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6042D41EF92E2000DC5B7C /* Debug */,
+				CB6042D51EF92E2000DC5B7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB6042981EF92E2000DC5B7C /* Project object */;
+}
